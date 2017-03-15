@@ -1,0 +1,70 @@
+body {
+	font-family: Helvetica;
+	margin: 25px;
+}
+
+header {
+	border-top: thick solid black;
+}
+
+#top-navbar {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#bottom-navbar {
+	padding-bottom: 10px;
+}
+
+#main-content {
+}
+
+a {
+	color:#1a3300;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+h1{
+	text-align: center;
+}
+
+#avatar {
+	float: right;
+	width: 90px;
+	padding: 10px;
+	margin: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+}
+
+footer {
+	border-bottom: thick solid black;
+}
+
+#thumbnails {
+	display: block;
+	margin: auto;
+	width: 30%;
+	border: 1px solid black;
+}
+
+#years {
+	font-size: 14px;
+	display: inline;
+}
