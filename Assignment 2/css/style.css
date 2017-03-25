@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+header {
+  background-image: url("../images/header_bg.jpg");
+  /*background-color: grey;*/
+  background-size: 100% ;
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+#header-logo {
+  display: inline-block;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.logo {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+ /* margin: 0;*/
+}
+
+h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #033048;
+}
+
+#ad-copy {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #606161;
+}
+
+#benefits {
+  /*height: 250px;*/
+  margin-top: 20px;
+  margin-bottom: 35px;
+  margin-left: 20px;
+}
+
+#gin-button {
+  font-size: 14px;
+  background-color: #f9e42e;
+  color: #033048;
+}
+
+#signup-button {
+  font-size: 12px;
+  background-color: #033048;
+  color: white;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#testimonial {
+  background-image: url("../images/testimonial_bg.jpg");
+  height: 394px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+aside {
+  width: 100%;
+  height: 100px;
+  background-color: #f9e42e;
+  position: relative;
+}
+
+ul {
+  margin: 0;
+}
+
+#quote {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding-top: 180px;
+}
+
+#source {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+  text-align: center;
+  /*line-height: 179px;*/
+}
+
+#footer-logo {
+  color: #f9e42e;
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+footer {
+  background-color: #121212;
+  height: 225px;
+}
+
+#social {
+  list-style-type: none;
+  text-align: center; 
+}
+
+.social-links {
+  padding: 15px;
+}
+
+#copyright {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
