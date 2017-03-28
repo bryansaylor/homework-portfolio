@@ -122,11 +122,14 @@ ul {
 }
 
 #footer-logo {
-  color: #f9e42e;
   margin: 0;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
+}
+
+#footer-logo a {
+  color: #f9e42e;
 }
 
 footer {
