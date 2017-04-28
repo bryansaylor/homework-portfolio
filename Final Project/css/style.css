@@ -90,6 +90,7 @@ header nav ul li a {
 }
 #main {
   margin-top: 80px;
+  position: relative;
   /*margin-right: 25px;*/
 }
 #posts {
@@ -127,7 +128,7 @@ h2 a {
 .post p, .post ul li, .post h6 {
   font-size: 20px;
   line-height: 1.333;
-  color: #606161;
+  color: black;
 }
 .post p:first-of-type:first-letter {
   float: left;
@@ -241,4 +242,20 @@ footer p {
 
 form {
   padding-bottom: 15px;
+}
+
+.times {
+  font-weight: bold;
+}
+
+.music-pic {
+  width: 100% !important;
+  position: absolute;
+  left:0;
+}
+
+
+
+.show-fig {
+  font-weight: bold;
 }

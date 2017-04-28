@@ -4,6 +4,8 @@ $(".hide").hide();
 $(".read-more").click(showStuff);
 $(".read-less").click(hideStuff);
 $(".learn-more").click(showLittleStuff);
+$(".show-fig").click(showFigure);
+// $(".hide-fig").click(hideFigure);
 
 function showStuff(){
 	event.preventDefault();
@@ -26,5 +28,19 @@ function showLittleStuff() {
 	$(".learn-more").hide();		
 }
 
+
+function showFigure(){
+	event.preventDefault();
+	$(this).find(".music-pic");
+	$(".music-pic").slideDown("fast");
+	$(".show-fig").hide();
+}
+
+// function hideFigure(){
+// 	event.preventDefault();
+// 	$("#fig1").slideUp("fast");
+// 	$(".show-fig").show();
+// 	$(".hide-fig").hide();
+// }
 });
 
