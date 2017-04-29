@@ -31,7 +31,6 @@ function showLittleStuff() {
 
 function showFigure(){
 	event.preventDefault();
-	$(this).find(".music-pic");
 	$(".music-pic").slideDown("fast");
 	$(".show-fig").hide();
 }
