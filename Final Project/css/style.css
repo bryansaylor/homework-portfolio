@@ -268,4 +268,18 @@ form {
   width: 100%;
   background: rgba(0,0,0,.9);
   display: block;
+  position: fixed;
+  top: 0;
+}
+
+.music-pic:hover {
+  cursor: pointer;
+}
+
+.big-pic {
+  width: 100% !important;
+  position: absolute;
+  left:0;
+  top:50%;
+  transform: translateY(-50%);
 }

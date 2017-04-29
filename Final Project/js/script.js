@@ -3,10 +3,9 @@ $(document).ready(function(){
 $(".hide").hide();
 $(".read-more").click(showStuff);
 $(".read-less").click(hideStuff);
-$(".learn-more").click(showLittleStuff);
 $(".music-pic").click(doModalStuff);
-// $(".show-fig").click(showFigure);
-// $(".hide-fig").click(hideFigure);
+$("#modal").click(clearModal);
+
 
 function showStuff(){
 	event.preventDefault();
@@ -23,16 +22,17 @@ function hideStuff(){
 	});
 }
 
-function showLittleStuff() {
-	event.preventDefault();
-	$("#learn-more-text").slideDown("fast");
-	$(".learn-more").hide();		
-}
 
 
 function doModalStuff() {
-	$("#page-content").addClass("modal-active");
-	console.log("clicked!");
+	$("#modal").addClass("modal-active");
+	var picUrl = $(this).attr("src");
+	$("#modal").append("<img class='music-pic big-pic' src="+picUrl+">");
 }
-});
 
+function clearModal() {
+	$("#modal").removeClass("modal-active");
+	$("#modal").empty("<img class='music-pic big-pic' src="+picUrl+">");
+}
+
+});
