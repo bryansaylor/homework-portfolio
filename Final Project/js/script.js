@@ -31,7 +31,7 @@ function showLittleStuff() {
 
 
 function doModalStuff() {
-	$("#modal").addClass("modal-active");
+	$("#page-content").addClass("modal-active");
 	console.log("clicked!");
 }
 });
