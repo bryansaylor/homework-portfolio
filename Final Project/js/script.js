@@ -4,7 +4,8 @@ $(".hide").hide();
 $(".read-more").click(showStuff);
 $(".read-less").click(hideStuff);
 $(".learn-more").click(showLittleStuff);
-$(".show-fig").click(showFigure);
+$(".music-pic").click(doModalStuff);
+// $(".show-fig").click(showFigure);
 // $(".hide-fig").click(hideFigure);
 
 function showStuff(){
@@ -29,17 +30,9 @@ function showLittleStuff() {
 }
 
 
-function showFigure(){
-	event.preventDefault();
-	$(".music-pic").slideDown("fast");
-	$(".show-fig").hide();
+function doModalStuff() {
+	$("#modal").addClass("modal-active");
+	console.log("clicked!");
 }
-
-// function hideFigure(){
-// 	event.preventDefault();
-// 	$("#fig1").slideUp("fast");
-// 	$(".show-fig").show();
-// 	$(".hide-fig").hide();
-// }
 });
 

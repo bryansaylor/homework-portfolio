@@ -90,7 +90,7 @@ header nav ul li a {
 }
 #main {
   margin-top: 80px;
-  position: relative;
+/*  position: relative;*/
   /*margin-right: 25px;*/
 }
 #posts {
@@ -250,12 +250,22 @@ form {
 
 .music-pic {
   width: 100% !important;
-  position: absolute;
-  left:0;
+ /* position: absolute;*/
+  /*left:0;*/
 }
-
 
 
 .show-fig {
   font-weight: bold;
+}
+
+.modal{
+  display: none;
+}
+
+.modal-active {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.9);
+  display: block;
 }
