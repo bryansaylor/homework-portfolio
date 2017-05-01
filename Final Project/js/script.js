@@ -22,17 +22,15 @@ function hideStuff(){
 	});
 }
 
-
-
 function doModalStuff() {
-	$("#modal").addClass("modal-active");
 	var picUrl = $(this).attr("src");
+	$("#modal").addClass("modal-active");
 	$("#modal").append("<img class='music-pic big-pic' src="+picUrl+">");
 }
 
 function clearModal() {
 	$("#modal").removeClass("modal-active");
-	$("#modal").empty("<img class='music-pic big-pic' src="+picUrl+">");
+	$("#modal").empty();
 }
 
 });
