@@ -5,18 +5,24 @@ $(".read-more").click(showStuff);
 $(".read-less").click(hideStuff);
 $(".music-pic").click(doModalStuff);
 $("#modal").click(clearModal);
+$(document).on('keyup',function(evt) {
+    if (evt.keyCode == 27) {
+       clearModal(); //for my wife
+    }
+});
 
 function showStuff(e) {
 	e.preventDefault();
-	$(this).siblings(".hide").first().slideDown();
+	$(this).siblings(".hide").first().slideDown("fast");
 	$(this).siblings(".read-less").first().show();
 	$(this).hide();
 }
 
 function hideStuff(e) {
 	e.preventDefault();
-	$(this).prevAll(".show-this-on-click").last().slideUp();
-	$(this).prevAll(".read-more").last().show();
+	$(this).prevAll(".show-this-on-click").last().slideUp("fast", function(){
+		$(this).prevAll(".read-more").last().show();
+	});
 	$(this).hide();
 }
 

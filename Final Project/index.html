@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>con alcune licenze: a music blog</title>
-		
+		<meta name="referrer" content="origin">
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
@@ -17,14 +17,14 @@
 	<div id="page-content">
 		<header>
 			<div class="container">
-				<h1 class="logo">a music blog.</h1>
+				<h1 class="logo"><a id="top-logo" href="#">a music blog.</a></h1>
 				<nav>
 					<ul>
 						<li><a href="#">About</a></li>
 						<li><a href="#">Resources</a></li>
 						<li><a href="#">Contact</a></li>
 						<li><a href="#">Forum</a></li>
-						<li><a href="#">Log In</a></li>
+						<li><a href="#username">Log In</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -86,7 +86,15 @@
 
 						<p class="read-more"><a href="#">Read more &gt;</a></p>
 						<div class="hide show-this-on-click"></br><p>Ut gravida leo sit amet tortor tincidunt, vitae euismod tortor rutrum. Nam ac lorem consectetur nulla efficitur eleifend. Duis vehicula erat nulla, a sollicitudin tellus ornare eget. Duis pellentesque aliquet posuere. Proin scelerisque diam venenatis, sollicitudin leo a, auctor libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc mi magna, varius gravida rutrum quis, mollis non felis.
-						</p></div>
+
+
+						</p>
+   						</br><img class="music-pic" src="images/fig3.png">
+   						</br><p>Ut eget lobortis diam, sit amet lacinia nulla. Donec maximus euismod ante. Etiam tristique nec augue eu tincidunt. Donec facilisis suscipit lacus, sagittis scelerisque mi vulputate eu. Fusce a leo tristique, sollicitudin dolor ac, accumsan nibh. Suspendisse gravida efficitur sodales. Suspendisse blandit sodales nisl. Morbi at feugiat lorem.</p>
+   						</br><img class="music-pic" src="images/fig4.png">
+   						<p>Curabitur dapibus laoreet nibh non ullamcorper. Praesent gravida metus risus, vel commodo nulla lobortis vel. Nullam lobortis id odio vitae lobortis. Praesent enim risus, tincidunt a urna in, dictum ullamcorper lorem. Donec sed metus sed velit pretium suscipit faucibus in massa. Mauris interdum hendrerit aliquet. Duis iaculis viverra nibh, non aliquam arcu.</p>
+
+						</div>
 						
 						<p class="read-less hide"><a href="#">Read less &gt;</a></p>
 
@@ -95,32 +103,37 @@
 			--><aside id="sidebar">
 					<h3>User Login</h3>
 					<p id="login-text">Log in to your account to comment</p>
-					<form>
-						<input class="login" type="text" placeholder="username"></input>
+					<form >
+						<input id="username" class="login" type="text" placeholder="username"></input>
 						<input class="login" type="password" placeholder="password"></input></br>
 						<input id="submit-button" type="submit" value="Log In"></input>
-						<a id="register" href="#">Register</a>
+						
 					</form>
 					 
-					<h3>Older Posts</h3>
-					<ul>
-						<li><a href="#"></a>March 2017</li>
-						<li><a href="#"></a>February 2017</li>
-						<li><a href="#"></a>January 2017</li>
-						<li><a href="#"></a>December 2016</li>
-					</ul>
+					<h3>Register</h3>
+					<form name="register" action="https://formspree.io/bryansaylor1@gmail.com"  method="POST">
+						
+						<input id="select-username" name="chooseUsername" type="text" placeholder="choose username">
+						<input name="choosePassword" type="password" placeholder="choose password">
+						<input name="enterEmail" type="email" placeholder="enter valid email">
+						<input type="submit" name="registerBtn" value="Register">
+
+
+					</form>
 					
 				</aside>
 			</div>
 		</section>
-
+		<aside id="register-btn-area">
+			<a id="register-btn" href="#select-username">Register Now</a>
+		</aside>
 		
 		<footer>
 			<h4 class="logo">a music blog.</h4>
 
 			<ul>
 				<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
-				<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
+				<li><a href="https://www.facebook.com/bryan.saylor.3"><img src="images/facebook.png" alt="Facebook logo"></a></li>
 			</ul>
 
 			<p class="copyright">Copyright 2017.</p>
