@@ -144,12 +144,17 @@ h2 a {
   font-weight: 600;
 }
 .read-more, .read-less {
-  text-align: right;
+  text-align: center;
   margin-top: 30px;
 }
 .read-more a, .read-less a {
   color: #043049;
   font-weight: 600;
+  background: black;
+  color: white;
+  padding: 17px;
+  border-radius: 10px;
+
 }
 
 
@@ -192,7 +197,7 @@ h2 a {
 
 footer {
   background: #121212;
-  padding: 65px 0 45px;
+  padding: 40px 0 40px;
   text-align: center;
 }
 footer .logo {
@@ -202,7 +207,7 @@ footer .logo {
 footer ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 26px 75px;
+  margin: 0 26px 25px;
 }
 footer p {
   font-size: 18px;
@@ -268,6 +273,7 @@ form {
 
 footer .logo {
   color: white;
+  margin-bottom: 16px;
 }
 
 #register-btn-area {
