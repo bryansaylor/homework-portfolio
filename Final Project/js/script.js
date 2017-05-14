@@ -10,6 +10,8 @@ $(document).on('keyup',function(evt) {
        clearModal(); //for my wife
     }
 });
+var scroll = 0;
+
 
 function showStuff(e) {
 	e.preventDefault();
@@ -36,6 +38,13 @@ function clearModal() {
 	$("#modal").removeClass("modal-active");
 	$("#modal").empty();
 }
+
+
+$("nav ul li:first-child").click(function(){
+	console.log("hamburger clicked");
+	$("nav").toggleClass("show");
+	});
+
 
 // function showStuff(){
 // 	event.preventDefault();

@@ -61,7 +61,7 @@ a {
 }
 
 .logo {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
 }
@@ -81,17 +81,23 @@ header .logo {
 
 header nav {
   float: right;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 header nav ul li {
   display: inline-block;
   margin: 0 0 0 40px;
-  font-size: 24px;
+  font-size: 20px;
 }
 header nav ul li a {
   color: #0000ff;
   font-weight: bold;
 }
+
+header ul {
+  /*transform: translateY(-25%);*/
+}
+
+
 #main {
   margin-top: 80px;
 /*  position: relative;*/
@@ -218,6 +224,10 @@ footer p {
   display: none;
 }
 
+header nav ul li {
+margin-left: 50px;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -247,7 +257,9 @@ form {
 }
 
 .modal{
-  display: none;
+  /*display: none;*/
+  transition: .3s all;
+  opacity: 0;
 }
 
 .modal-active {
@@ -257,6 +269,7 @@ form {
   display: block;
   position: fixed;
   top: 0;
+  opacity: 1;
 }
 
 .music-pic:hover {
@@ -301,4 +314,107 @@ footer .logo {
 
 label {
   font-size: 16px;
+}
+
+
+nav ul li:first-child{
+  background: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+nav ul li:first-child:hover{
+  cursor: pointer;
+}
+
+.line{
+  width: 1.2em;
+  margin-top: .25em;
+  height: 3px;
+  background: white;
+}
+
+
+@media screen and (orientation: portrait) {
+  #posts, .post h2, .post {
+    width: 100%;
+    float: none;
+  }
+
+  .post h2 {
+    text-align: center;
+  }
+
+  .post {
+    padding-left: 15px;
+  }
+  #page-content, .container {
+    width: 100%;
+  }
+
+  #sidebar {
+    clear: both;
+    float: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: none;
+
+  }
+  iframe {
+    width: 100%;
+  }
+
+  input {
+    font-size: 20px;
+
+  }
+
+  header {
+    padding-bottom: 5px;
+  }
+
+ header .logo {
+    float: none;
+    display: inline-block;
+    text-align: center;
+  }
+
+  header nav{
+    float: none;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+
+  }
+
+  nav ul li:first-child{
+    display: block;
+    padding-top: 35px;
+    padding-right: 20px;
+  }
+
+  nav {
+    transition:.5s height;
+    height: 0px;
+    text-align: center;
+
+  }
+#top-logo {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-left: 5px
+}
+.show {
+  height: 230px;
+
+}
+
 }
